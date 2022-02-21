@@ -28,13 +28,29 @@
         <li class="header-nav-item"><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </nav>
+    <div class="menu" id="menu">
+      <span class="menu__line--top"></span>
+      <span class="menu__line--middle"></span>
+      <span class="menu__line--bottom"></span>
+    </div>
+    <nav class="drawer-nav" id="drawer-nav">
+      <ul class="drawer-nav-list">
+        <li class="drawer-nav-item"><a href="index.html">ホーム</a></li>
+        <li class="drawer-nav-item"><a href="service.html">事業内容</a></li>
+        <li class="drawer-nav-item"><a href="news.html">ニュース</a></li>
+        <li class="drawer-nav-item"><a href="blog.html">社員ブログ</a></li>
+        <li class="drawer-nav-item"><a href="company.html">会社概要</a></li>
+        <li class="drawer-nav-item"><a href="recruit.html">採用情報</a></li>
+        <li class="drawer-nav-item"><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
   </header>
   <div class="contact__catch">
     <h1 class="contact__catch__title">お問い合わせ</h1>
   </div>
   <main>
     <div class="contact">
-      <form action="/form.php" method="post" name="form1" action="result.html">
+      <form method="post" name="form1" action="result.html">
         <div>
           <label class="contact__form-name" for="company">会社名</label>
           <input class="contact__form-text" type="text" id="company" name="company">
@@ -54,7 +70,7 @@
           <span class="contact__form-name-required">*</span>
           <textarea class="contact__form-text" id="message" name="message" cols="50" rows="10"></textarea>
         </div>
-        <input class="contact__form-btn" type="submit" value="お申込み" onclick="checkForm()">
+        <input class="contact__form-btn" type="submit" value="お申込み" onClick="return check();">
       </form>
     </div>
 

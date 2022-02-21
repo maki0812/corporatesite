@@ -9,22 +9,22 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  padding: 0 30px;
   background-color: #fff;
   width: 100vw;
   position: fixed;
   z-index: 1;
+
 }
 .header-ttl {
   font-size: 24px;
   width: 80px;
+  margin-left: 30px;
 }
 .header-nav-list {
   display: flex;
   font-weight: bold;
   list-style: none;
-  margin-right: 30px;
-  padding-right: 30px;
+  margin-left: 30px;
 }
 .header-nav-item{
   margin-right: 30px;
@@ -40,6 +40,9 @@ a {
   opacity: 0.6;
   transition-duration: 0.3s;
 }
+.menu{
+  display: none;
+}
 .drawer-nav{
   display: none;
 }
@@ -50,6 +53,7 @@ a {
 }
 .menu {
   display: inline-block;
+  margin-right: 30px;
   width: 36px;
   height: 32px;
   cursor: pointer;
@@ -86,7 +90,32 @@ a {
   top: 14px;
   transform: rotate(-45deg);
 }
-
+.in{
+  transform: translateX(100%);
+}
+.drawer-nav-item{
+  text-decoration: none;
+  color: blue
+}
+.drawer-nav{
+  display: block;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  background: #fff;
+  transition: .7s;
+  
+}
+.drawer-nav ul{
+  padding-top: 80px;
+  text-align: center;
+}
+.drawer-nav ul li{
+  list-style-type: none;
+  margin-top: 50px;
+}
 }
 /*--------------------- catch--------------------- */
 .catch{
