@@ -1,0 +1,140 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/*--------------------- header--------------------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 999
+}
+.header-ttl {
+  font-size: 24px;
+  width: 80px;
+}
+.header-nav-list {
+  display: flex;
+  font-weight: bold;
+  list-style: none;
+  margin-right: 30px;
+}
+.header-nav-item{
+  margin-right: 30px;
+}
+.header-nav-item:hover{
+  color: rgb(146, 143, 143);
+}
+.header img {
+  width: 100%;
+  height: auto;
+}
+/*--------------------- catch--------------------- */
+.contact__catch{
+  position: relative;
+  background: url(../img/mv.png) no-repeat center/cover;
+  height: 50vh;
+  width: 100vw;
+}
+.contact__catch__title{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+/*--------------------- main--------------------- */
+
+.contact{
+  width: 70%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.contact__form-name{
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.contact__form-name-required{
+  font-weight: bold;
+  color: #cd0224;
+}
+.contact__form-text{
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+  margin: 10px 0 20px;
+}
+
+.contact__form-btn{
+  display: block;
+  margin: 30px auto 0;
+  width: 300px;
+  text-align: center;
+  padding: 5px 0;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+/*--------------------- footer--------------------- */
+.footer {
+  width: 100vw;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 20px;
+  text-align: center;
+}
+.footer-inner{
+  display: flex;
+  justify-content: space-between;
+  margin: auto 30px;
+}
+.footer-nav-list {
+  display: flex;
+  font-weight: bold;
+  width: 100%;
+  justify-content: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+  padding-right: 50px;
+  margin-right: 30px;
+}
+.footer-nav-item {
+  justify-content: center;
+}
+.footer-nav-item:hover{
+  color: rgb(146, 143, 143);
+}
+.copyright{
+  font-size: 12px;
+}
+.footer-nav-list li +li{
+  border-left: 2px solid #fff;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 768px){
+  .footer-inner{
+    display: block;
+  }
+  .footer-nav-list {
+    display: block;
+  }
+  .footer-nav-item{
+    margin: 10px 0;
+  }
+ .footer-nav-list li +li{
+  border-left: 2px solid #000;
+  padding: 0 10px;
+}
+}
